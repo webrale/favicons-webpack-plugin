@@ -4,6 +4,13 @@ Favicons Webpack Plugin
 
 Allows to use the [favicons](https://github.com/haydenbleasel/favicons) generator with webpack
 
+Fork
+----
+
+This is a fork of [jantimon/favicons-webpack-plugin](https://github.com/jantimon/favicons-webpack-plugin) that upgrades the [favicons](https://github.com/haydenbleasel/favicons) package to 5.X to fix an incompatibility with newer versions of PostCSS.
+
+The error we encountered and this fork fixes is described here: https://github.com/jantimon/favicons-webpack-plugin/issues/153
+
 Installation
 ------------
 You must be running webpack on node 0.12.x or higher
