@@ -88,6 +88,7 @@ test('should work together with the html-webpack-plugin', async t => {
   ]));
   const outputPath = stats.compilation.compiler.outputPath;
   const expected = path.resolve(__dirname, 'fixtures/expected/generate-html');
+  console.log(outputPath);
   const compareResult = await dircompare.compare(outputPath, expected, compareOptions);
   const diffFiles = compareResult.diffSet.filter((diff) => diff.state !== 'equal');
   t.is(diffFiles[0], undefined);
